@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            transition: all 2s ease;
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+            
+           
+        }
+        @keyframes slide{
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+                transform: translateX(300px);
+            }
+            75%{
+                background-color: yellow;
+                transform: scale(1.5);
+
+            }
+            100%{
+                background-color: green;
+                transform: rotate(300deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+
+    </div>
+    
+</body>
+</html>
